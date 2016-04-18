@@ -2,10 +2,11 @@
     angular.module('app.services')
         .service('userService', UserService);
 
-        function UserService(localStorageService) {
+        function UserService($http, apiUrl, localStorageService) {
             return {
                 userName: userName,
-                isLoggedIn: isLoggedIn
+                isLoggedIn: isLoggedIn,
+                register: register
             };
 
             function userName() {
@@ -14,6 +15,10 @@
             }
             function isLoggedIn() {
                 return !!localStorageService.get('authorizationData');
+            }
+
+            function register(userData) {
+                return $http.post(apiUrl+'account/register', userData);
             }
         }
 })();
