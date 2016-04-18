@@ -1,0 +1,27 @@
+{
+  "name": "WebBlackJack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AJ Keresztes",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "stream-series": "^0.1.1",
+    "wiredep": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^2.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-server-livereload": "^1.7.4",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0"
+  }
+}

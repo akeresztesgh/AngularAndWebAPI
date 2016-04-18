@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card card-container">
+
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <form class="form-signin" name='vm.loginFrm' novalidate>
+            <span id="reauth-email" class="reauth-email"></span>
+            <div class='form-group has-feedback' ng-class='{ "has-error": vm.loginFrm.userName.$invalid && vm.userName.email.$dirty }'>
+                <input type="email" ng-model='vm.user.userName' class="form-control" placeholder="Email address" name='email' required autofocus>
+                <span ng-if='vm.loginFrm.userName.$invalid' class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <div class='form-group has-feedback' ng-class='{ "has-error": vm.loginFrm.password.$invalid && vm.loginFrm.password.$dirty }'>
+                <input type="password" ng-model='vm.user.password' class="form-control" placeholder="Password" name='password' required>
+                <span ng-if='vm.loginFrm.password.$invalid' class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+            <div id="remember" class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" ng-disabled='!vm.user.userName || !vm.user.password' type="submit"
+                    ng-click='vm.login()'>Sign in</button>
+        </form>
+        <!-- /form -->
+        <div>
+            <a href="#" class="forgot-password">
+                 Forgot the password?
+             </a>
+        </div>
+        <div>
+         <a ui-sref='register' class="forgot-password">
+              Register a new account.
+          </a>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+
+<div class='container-fluid'>
+    <div class='row'>
+        <div class='col-sm-12 col-md-5'>
+            <h2>Register New User</h2>
+        </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-12 col-md-5'>
+            <form name='vm.regFrm' ng-submit='vm.register()' novalidate>
+                <div class='form-group has-feedback' ng-class='{"has-error": vm.regFrm.email.$invalid && vm.regFrm.email.$dirty}'>
+                    <label for='email'>Email:</label>
+                    <input type='email' name='email' id='email' placeholder='Email' class='form-control' ng-model='vm.user.email'
+                           required>
+                    <span ng-if='vm.regFrm.email.$invalid && vm.regFrm.email.$dirty' 
+                          class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+                <div class='form-group has-feedback' ng-class='{"has-error": vm.regFrm.password.$invalid && vm.regFrm.password.$dirty}'>
+                    <label for='password'>Password:</label>
+                    <input type='password' name='password' id='password' placeholder='Password' ng-minlength='6' class='form-control'
+                           ng-model='vm.user.password' required>
+                    <span ng-if='vm.regFrm.password.$invalid && vm.regFrm.password.$dirty'
+                          class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+                <div class='form-group has-feedback' ng-class='{"has-error": vm.regFrm.confirmPassword.$invalid && vm.regFrm.confirmPassword.$dirty}'>
+                    <label for='password'>Confirm Password:</label>
+                    <input type='password' name='confirmPassword' id='confirmPassword' placeholder='Confirm Password' class='form-control' ng-minlength='6'
+                           ng-model='vm.user.confirmPassword' required>
+                    <span ng-if='vm.regFrm.confirmPassword.$invalid && vm.regFrm.confirmPassword.$dirty'
+                          class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+                <input class='btn btn-default' type="submit" value="Submit" ng-disabled='vm.regFrm.$invalid || vm.user.password !== vm.user.confirmPassword'/>
+            </form>
+        </div>
+    </div>
+</div>
