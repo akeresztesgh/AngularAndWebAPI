@@ -1,8 +1,9 @@
 # Sample using Angular JS and Web API
 
-This sample is a skeleton framework that shows AngularJS communicating with Web API via
+This is a sample skeleton framework that shows AngularJS communicating with Web API via
 JWT.  The login system works and it is able to send and retrieve data via REST.
 
+On the backend, this system utilizes entity framework, identity, and owin (and more).
 On the front end, this system utilizes npm, bower, and gulp for the build process.
 
 ## Installation
