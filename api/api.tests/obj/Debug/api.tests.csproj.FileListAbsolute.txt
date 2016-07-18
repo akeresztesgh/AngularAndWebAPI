@@ -1,0 +1,11 @@
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\api.tests.dll
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\api.tests.pdb
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\Microsoft.Owin.dll
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\Owin.dll
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\Microsoft.Owin.xml
+C:\code\AngularAndWebAPI\api\api.tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\code\AngularAndWebAPI\api\api.tests\obj\Debug\api.tests.csprojResolveAssemblyReference.cache
+C:\code\AngularAndWebAPI\api\api.tests\obj\Debug\api.tests.dll
+C:\code\AngularAndWebAPI\api\api.tests\obj\Debug\api.tests.pdb
